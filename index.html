@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="outer-container">
+        <div class="my-container">
+            <h2>Highlight HTML Content</h2><br><br>
+
+
+            <label for="html">HTML Content:</label>
+            <textarea id="html" name="html" rows="10" class="form-control" cols="50"></textarea>
+
+            <label for="text">Plain Text:</label>
+            <textarea id="text" name="text" rows="3" class="form-control" cols="50"></textarea>
+
+
+            <div id="positionsInput"><br>
+                <label for="positions">Plain Text Positions:</label>
+                <div class="position-input">
+                    <input type="number" class="form-control" placeholder="Start" />
+                    <input type="number" class="form-control" placeholder="End" />
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <div class="button-container">
+                <button id="addPosition" class="btn btn-secondary" onclick="addStartAndEndInputs()">Add Position</button>
+                <button onclick="highlight()" class="btn btn-primary">Highlight</button>
+            </div>
+            
+
+            <!-- We will populate the div below with the highlighted text -->
+            <br><br>
+            <div>
+
+                <hr>
+            </div>
+            <div class="">
+                <h2>
+                    Output:
+                </h2>
+                <div class="result-container" id="output"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
